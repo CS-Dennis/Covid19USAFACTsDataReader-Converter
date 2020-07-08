@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="600.0" maxWidth="800.0" minHeight="300.0" minWidth="450.0" prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.covid19.application.MainController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" layoutX="67.0" prefHeight="245.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label text="Step: 1">
+                     <font>
+                        <Font name="System Bold" size="12.162896156311035" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" minWidth="400.0" prefHeight="27.0" prefWidth="400.0" text="Please download data source of US Covid 19 Known Cases by Counties" />
+                  <HBox alignment="CENTER" prefHeight="33.0" prefWidth="400.0" spacing="10.0">
+                     <children>
+                        <Hyperlink onAction="#openDataDownloadLink" prefHeight="33.0" prefWidth="127.0" text="Direct Download Link">
+                           <tooltip>
+                              <Tooltip text="https://usafactsstatic.blob.core.windows.net/public/data/covid-19/covid_confirmed_usafacts.csv" />
+                           </tooltip>
+                        </Hyperlink>
+                        <Label text="Or" />
+                        <Hyperlink onAction="#openDataPage" text="Visit usafacts.org Web Page " />
+                     </children>
+                  </HBox>
+                  <Label text="Step: 2">
+                     <font>
+                        <Font name="System Bold" size="12.162896156311035" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="53.0" prefWidth="450.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#selectDataFile" prefHeight="27.0" prefWidth="203.0" text="Select the Data Source File (*.CSV)" />
+                     </children>
+                  </HBox>
+                  <Label text="Step: 3">
+                     <font>
+                        <Font name="System Bold" size="12.162896156311035" />
+                     </font>
+                  </Label>
+                  <Label text="Choose all dates or a date you want to export" />
+                  <HBox alignment="CENTER" prefHeight="54.0" prefWidth="450.0" spacing="10.0">
+                     <children>
+                        <ChoiceBox fx:id="dateChoiceBox" onAction="#dateChoiceBoxSelection" prefWidth="150.0" />
+                        <DatePicker fx:id="datePicker" />
+                        <Button fx:id="exportButton" mnemonicParsing="false" onAction="#exportData" text="Export" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="135.0" text="Data Processing Status:" />
+                        <ProgressBar fx:id="progressBar" prefWidth="200.0" progress="0.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="44.0" prefWidth="450.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#readMe" text="Read Me About This Application" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+   </center>
+   <bottom>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="statusLabel" maxHeight="30.0" maxWidth="800.0" minHeight="30.0" minWidth="193.0" prefHeight="30.0" prefWidth="193.0" text="Status" />
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>
