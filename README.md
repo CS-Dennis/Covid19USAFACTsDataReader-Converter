@@ -2,7 +2,7 @@
 
 # Description:
 Data reader and converter of covid 19 U.S. confirmed cases by state. Data source: [facts.org/visualizations/coronavirus-covid-19-spread-map/](facts.org/visualizations/coronavirus-covid-19-spread-map/)
-This GUI application is written in Java and JavaFX.
+This GUI application is written in Java.
 
 # Purpose:
 If you are working with covid 19 U.S. data, especially with confirmed covid 19 cases from usafacts.org. This application will be able to read the data file in CSV format and consolidate all confirmed cases of all counties by each state (50 of them) plus D.C.; export the results in CSV format. In this application, it has a direct link to the source file and the web page for you to view and download by yourself. You can choose to export the data of all dates from the first date that was recorded on 1/22/2020 until the last date the data has been recorded; or you can choose a specific date to export.
@@ -18,4 +18,18 @@ Once you extract all the folders and files from the Covid19DataReader&Converter.
 # Detail of the Java Project:
 This project is a JavaFX Maven project that mainly consists of four Java classes: App.java, CovidDataReader.java, CovidStateDaily.java, and MainController.java
 
-The 
+## Description of the Classes:
+### The App.java:
+It has the main function for launching the java program.
+
+###CovidStateDaily.java:
+A class define the objects of covid daily status by state.
+It has four fields including state, date, caseNum, and stateFIPS.
+
+###CovidDataReader.java:
+The meat and potatoes of this program. It defines functions of how to process the original data file and export the results based on the user selection of dates.
+
+### MainController.java
+A controller class of the graphic user interface for this program.
+
+
