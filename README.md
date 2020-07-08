@@ -22,11 +22,11 @@ This project is a JavaFX Maven project that mainly consists of four Java classes
 ### The App.java:
 It has the main function for launching the java program.
 
-###CovidStateDaily.java:
+### CovidStateDaily.java:
 A class define the objects of covid daily status by state.
 It has four fields including state, date, caseNum, and stateFIPS.
 
-###CovidDataReader.java:
+### CovidDataReader.java:
 The meat and potatoes of this program. It defines functions of how to process the original data file and export the results based on the user selection of dates.
 
 ### MainController.java
