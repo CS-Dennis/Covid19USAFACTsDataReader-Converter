@@ -1,7 +1,7 @@
 # Covid19 USAFACTs Data Reader and Converter
 
 # Description:
-Data reader and converter of covid 19 U.S. confirmed cases by state. Data source: [facts.org/visualizations/coronavirus-covid-19-spread-map/](facts.org/visualizations/coronavirus-covid-19-spread-map/)
+Data reader and converter of covid 19 U.S. confirmed cases by state. Data source: [facts.org/visualizations/coronavirus-covid-19-spread-map/](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/)
 This GUI application is written in Java.
 
 # Purpose:
