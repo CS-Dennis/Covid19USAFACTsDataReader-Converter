@@ -7,10 +7,10 @@ This GUI application is written in Java.
 # Purpose:
 If you are working with covid 19 U.S. data, especially with confirmed covid 19 cases from usafacts.org. This application will be able to read the data file in CSV format and consolidate all confirmed cases of all counties by each state (50 of them) plus D.C.; export the results in CSV format. In this application, it has a direct link to the source file and the web page for you to view and download by yourself. You can choose to export the data of all dates from the first date that was recorded on 1/22/2020 until the last date the data has been recorded; or you can choose a specific date to export.
 
-## Compiled jar program ready for use on Windows:
+## Compiled java application ready for use on Windows:
 You can download the application directly [here](https://drive.google.com/file/d/1kASPYLDo3KfyqOWBtolLh929JkZV_icD/view). Please make sure you have java runtime environment installed on system ([https://www.java.com/en/download/](https://www.java.com/en/download/)).
 
-## How to use the jar program:
+## How to use the compiled application:
 Once you extract all the folders and files from the Covid19DataReader&Converter.zip file, open folder bin and launch the batch file App.bat. Ready to enjoy.
 
 
