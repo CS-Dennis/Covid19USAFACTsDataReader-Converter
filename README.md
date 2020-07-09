@@ -13,7 +13,7 @@ You can download the application directly [here](https://drive.google.com/file/d
 ## How to use the compiled application:
 Once you extract all the folders and files from the Covid19DataReader&Converter.zip file, open folder bin and launch the batch file App.bat. Ready to enjoy.
 
-![Main Screen]( https://drive.google.com/uc?export=download&id=1BhrAAmOWsrzJ7k1BeXv8w5YAOqS_gUsa)
+![Main Screen]( https://drive.google.com/uc?export=download&id=1BhrAAmOWsrzJ7k1BeXv8w5YAOqS_gUsa | width=100)
 
 
 
