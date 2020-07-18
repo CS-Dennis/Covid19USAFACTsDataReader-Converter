@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-// covid data reader for data from usafacts.org; the data format should be tab-delimited (*.txt) type.
+// covid data reader for data from usafacts.org; the data format should be CSV (*.csv) type.
 // data page: https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/
 // data direct link: https://usafactsstatic.blob.core.windows.net/public/data/covid-19/covid_confirmed_usafacts.csv
 public class CovidDataReader {
